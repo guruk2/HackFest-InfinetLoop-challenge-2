@@ -35,7 +35,7 @@ body {
 	border-bottom: none;		/* avoid a double border */
 	clear: both;				/* clear:both makes sure the content div doesn't float next to this one but stays under it */
 	width:100%;
-	height:20px;
+	height:30px;
 	padding: 0 30px;
 	background-color: #FFF;
 	text-align: left;
@@ -130,7 +130,7 @@ textarea {
 }
 </style>
 <body>
-<h1>My forum</h1>
+<h1>VTU forum</h1>
 	<div id="wrapper">
 	<div id="menu">
 		<a class="item" href="/forum/index.php">Home</a> -
@@ -150,6 +150,11 @@ textarea {
  		echo '<a href="signin.php">Sign in</a> or <a href="signup.php">create an account</a>.';
  	}
 ?>
+<!-- Add login URL in index.php -->
+<a class="btn btn-block btn-social btn-facebook" href="<?php echo $loginURL; ?>">Login with StackOverflow</a>
+ 
+<!-- Add logout URL in home.php -->
+
 </div>
 </div>
 		<div id="content">
